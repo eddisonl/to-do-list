@@ -1,0 +1,73 @@
+/* login */
+* {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #50d5b7, #067d68);
+  min-height: 35.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5em;
+  margin: 2rem;
+}
+section {
+  margin-top: 1em;
+  border-radius: 0.5em;
+  align-items: center !important;
+  width: 25em;
+  text-align: center;
+  background-color: #fff;
+}
+form {
+  margin-top: 1em;
+  padding-bottom: 1.5rem;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  box-shadow: 0.5em 0.5em 0.5em;
+}
+
+#email,
+#password {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.217);
+  padding: 10px;
+  width: 60%;
+}
+#password {
+  position: relative;
+}
+
+h3 {
+  margin-top: 1em;
+}
+#submit {
+  width: 20%;
+  height: 2.3rem;
+  background-color: blue;
+  color: white;
+  font: bolder;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+#submit:active {
+  background-color: brown;
+}
+#eyesIcon {
+  position: fixed;
+  top: 15.5rem;
+  right: 39em;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

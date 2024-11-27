@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #50d5b7, #067d68);
+  min-height: 35.9rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 440px) {
+  body {
+    min-height: 41.6rem;
+  }
+}
+.container {
+  text-align: center;
+  width: 50rem;
+}
+.heading {
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 440px) {
+  .heading {
+    margin-left: 10rem;
+  }
+}
+.body {
+  background-color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 440px) {
+  .body {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 1rem;
+  }
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  background-color: white;
+  row-gap: 4px !important;
+  padding: 1rem;
+
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 445px) {
+  .li {
+    margin-left: 5rem !important;
+  }
+  span.list-text {
+    width: 20rem;
+  }
+}
+
+input.inputText {
+  display: flex;
+  height: 1.5rem;
+  padding: 16px;
+}
+@media screen and (min-width: 445px) {
+  .inputText {
+    width: 63%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .inputText {
+    width: 57%;
+    margin-left: 13rem;
+  }
+}
+.date-type {
+  height: 1.5rem;
+  padding: 16px;
+  cursor: pointer;
+}
+.add-card {
+  width: 10%;
+  height: 2.3rem;
+  background-color: blue !important;
+  color: white;
+  font: bolder;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none !important;
+}
+.add-card:hover {
+  background-color: aquamarine !important;
+}
+.delBtn {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+.delBtn:hover {
+  background-color: burlywood;
+}
+.delBtn,
+#clearAll:active {
+  background-color: brown;
+}
+
+.inputText,
+.date-type,
+.add-card {
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  background-color: white;
+}
+.paragraph-pop {
+  overflow-y: auto;
+  height: 25rem;
+  word-break: break-all;
+}
+@media screen and (max-width: 440px) {
+  .paragraph-pop {
+    overflow-y: auto;
+    height: 45rem;
+    word-break: break-all;
+  }
+}
+.paragraph-pop::-webkit-scrollbar {
+  display: none;
+}
+span.list-text {
+  width: 30rem;
+  padding: 3px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 440px) {
+  span.list-text {
+    padding: 3px;
+    text-align: justify;
+    margin-left: 11.5rem;
+  }
+  .dated {
+    width: 8rem;
+  }
+  .paragraph-pop {
+    overflow-y: auto;
+    height: 45rem;
+    word-break: break-all;
+  }
+}
+.strikethrough {
+  text-decoration: line-through !important;
+}
+.edit-text {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+.edit-text:hover {
+  background-color: burlywood;
+}
+
+#clearAll {
+  width: 10%;
+  height: 2.3rem;
+  background-color: red;
+  color: white;
+  font: bolder;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+#clear {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 1em;
+}
+div#textCont {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+div#tools {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+#modal,
+#modalDelete {
+  margin: 15em 10em 0 30em;
+  padding: 1em;
+  max-width: 26%;
+  border: none;
+}
+#cancelBtn,
+#cancelButton {
+  background-color: blue;
+}
+#confirm,
+#deleteOneItem {
+  background-color: red;
+}
+#confirm,
+#cancelBtn {
+  margin-top: 1em;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#cancelBtn #cancelButton :hover {
+  background-color: aqua;
+}
+#confirm #deleteOneItem :active {
+  background-color: burlywood;
+}
+#buttonForm {
+  margin-top: 7px;
+  display: grid;
+  grid-template-columns: 7em 7em;
+  gap: 10px;
+}
+#deleteOneItem,
+#cancelButton {
+  padding: 10px;
+  border: none;
+  color: white;
+}
